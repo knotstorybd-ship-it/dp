@@ -54,7 +54,7 @@ export function HomePage() {
       <PromoPopup />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-32 pb-32 bg-white">
+      <section className="relative min-h-[85vh] flex flex-col pt-24 pb-12 bg-white">
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-emerald-50/50 rounded-full blur-[120px]"></div>
           <div className="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-blue-50/30 rounded-full blur-[100px]"></div>
@@ -75,7 +75,7 @@ export function HomePage() {
                 <motion.h1 
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="text-4xl md:text-6xl xl:text-7xl font-black text-emerald-950 leading-[1.3] py-2 tracking-tight"
+                  className="text-3xl md:text-5xl xl:text-6xl font-black text-emerald-950 leading-[1.2] py-2 tracking-tight"
                 >
                   {siteSettings.heroTitle} <br />
                   <span className="bg-gradient-to-br from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent py-2 px-1 inline-block">{siteSettings.heroSubtitle}</span>
@@ -95,7 +95,7 @@ export function HomePage() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="flex flex-col sm:flex-row items-center gap-4 pt-8"
+                className="flex flex-col sm:flex-row items-center gap-4 pt-6"
               >
                 <Link 
                   to="/join-writer" 
