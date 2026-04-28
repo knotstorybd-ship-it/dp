@@ -54,7 +54,7 @@ export function HomePage() {
       <PromoPopup />
       
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex flex-col pt-12 pb-6 lg:pt-16 lg:pb-12 bg-white">
+      <section className="relative min-h-[70vh] lg:min-h-[85vh] flex items-center pt-12 pb-6 lg:pt-16 lg:pb-12 bg-white">
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-emerald-50/50 rounded-full blur-[120px]"></div>
           <div className="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-blue-50/30 rounded-full blur-[100px]"></div>
@@ -114,10 +114,10 @@ export function HomePage() {
               </motion.div>
             </div>
 
-            <div className="flex-[1.2] relative w-full max-w-[300px] lg:max-w-none mx-auto mt-8 lg:mt-0">
+            <div className="flex-1 relative w-full max-w-[280px] lg:max-w-none mx-auto mt-6 lg:mt-0">
               <motion.div
-                initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
-                animate={{ opacity: 1, scale: 1.0, rotate: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
                 className="relative z-10"
               >
