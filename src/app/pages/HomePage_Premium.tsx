@@ -114,10 +114,10 @@ export function HomePage() {
               </motion.div>
             </div>
 
-            <div className="flex-[1.2] relative w-full lg:max-w-none mt-8 lg:mt-0">
+            <div className="flex-[1.2] relative w-full max-w-[300px] lg:max-w-none mx-auto mt-8 lg:mt-0">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
-                animate={{ opacity: 1, scale: 1.1, rotate: 0 }}
+                animate={{ opacity: 1, scale: 1.0, rotate: 0 }}
                 transition={{ duration: 0.8 }}
                 className="relative z-10"
               >
