@@ -59,51 +59,38 @@ export function HomePage() {
           <div className="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-blue-50/30 rounded-full blur-[100px]"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-            <div className="flex-1 text-center lg:text-left space-y-6">
-              <div className="inline-flex items-center gap-3 px-4 py-1.5 bg-emerald-50/80 backdrop-blur-sm border border-emerald-100/50 text-emerald-800 rounded-full">
-                <span className="text-[9px] font-black uppercase tracking-[0.2em]">{authors.length}+ লেখক যুক্ত আছেন</span>
-              </div>
-              
-              <div className="space-y-1">
-                <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-black text-emerald-950 leading-tight py-2 tracking-tight">
-                  {siteSettings.heroTitle} <br />
-                  <span className="bg-gradient-to-br from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent py-2 px-1 inline-block">{siteSettings.heroSubtitle}</span>
-                </h1>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center justify-center gap-3 px-5 py-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-100/50 text-emerald-800 rounded-full mx-auto">
+              <span className="text-[10px] font-black uppercase tracking-[0.25em]">{authors.length}+ লেখক যুক্ত আছেন</span>
+            </div>
+            
+            <div className="space-y-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-emerald-950 leading-tight py-2 tracking-tight mx-auto">
+                {siteSettings.heroTitle} <br />
+                <span className="bg-gradient-to-br from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent py-2 px-1 inline-block">{siteSettings.heroSubtitle}</span>
+              </h1>
 
-                <p className="text-base md:text-lg text-slate-500 font-medium max-w-xl leading-relaxed">
-                  {siteSettings.heroDescription}
-                </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 lg:pt-6">
-                <Link 
-                  to="/join-writer" 
-                  className="group relative px-8 py-5 bg-emerald-600 text-white rounded-2xl font-black text-lg shadow-2xl shadow-emerald-600/30 hover:bg-emerald-700 transition-all flex items-center gap-3 overflow-hidden w-full sm:w-auto justify-center"
-                >
-                  <span className="relative z-10">{siteSettings.heroCtaText}</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" />
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/0 via-white/20 to-emerald-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-                </Link>
-                <Link 
-                  to="/browse" 
-                  className="px-8 py-5 bg-slate-50 text-emerald-950 rounded-2xl font-black text-lg hover:bg-slate-100 transition-all border border-slate-200/50 w-full sm:w-auto text-center"
-                >
-                  {siteSettings.heroSecondaryCtaText}
-                </Link>
-              </div>
+              <p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
+                {siteSettings.heroDescription}
+              </p>
             </div>
 
-            <div className="flex-1 relative w-full max-w-[280px] lg:max-w-none mx-auto mt-6 lg:mt-0">
-              <div className="relative z-10">
-                <div className="absolute -inset-4 bg-emerald-100/50 rounded-[3rem] blur-2xl -z-10 animate-pulse"></div>
-                <img 
-                  src={heroMain} 
-                  alt="Hero Content" 
-                  className="w-full h-auto drop-shadow-[0_32px_64px_rgba(5,150,105,0.15)] rounded-[2.5rem]"
-                />
-              </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+              <Link 
+                to="/join-writer" 
+                className="group relative px-8 py-5 bg-emerald-600 text-white rounded-2xl font-black text-lg shadow-2xl shadow-emerald-600/30 hover:bg-emerald-700 transition-all flex items-center justify-center gap-3 overflow-hidden w-full sm:w-auto"
+              >
+                <span className="relative z-10">{siteSettings.heroCtaText}</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" />
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/0 via-white/20 to-emerald-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+              </Link>
+              <Link 
+                to="/browse" 
+                className="px-8 py-5 bg-slate-50 text-emerald-950 rounded-2xl font-black text-lg hover:bg-slate-100 transition-all border border-slate-200/50 w-full sm:w-auto text-center"
+              >
+                {siteSettings.heroSecondaryCtaText}
+              </Link>
             </div>
           </div>
         </div>
